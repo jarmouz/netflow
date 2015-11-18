@@ -1,0 +1,28 @@
+INSTALL 
+
+#
+# AFTER INSTALL NFSEN, YOU MUST DO THE FOLLOWING SETUP
+#
+
+$USER = "www-data";
+$WWWUSER = "www-data";
+$WWWGROUP = "www-data";
+
+%sources = (
+'MYROUTER' => { 'port' => '555', 'col' => '#0000ff', 'type' => 'netflow' },
+);
+
+$MAIL_FROM = 'YOUR_EMAIL';
+$SMTP_SERVER = 'YOUR_SMTP_SERVER';
+
+# 
+# CONFIGURATION OF FPROBE
+#
+the port should be the same of :
+
+%sources = (
+'MYROUTER' => { 'port' => '555', 'col' => '#0000ff', 'type' => 'netflow' },
+);
+
+# INTERFACE
+http://ip_server/nfsen/nfsen.php
